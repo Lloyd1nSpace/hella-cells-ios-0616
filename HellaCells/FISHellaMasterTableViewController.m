@@ -69,7 +69,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-    FISHellaDetailViewController *detail = segue.destinationViewController;
+    FISHellaDetailViewController *detail = (FISHellaDetailViewController *)segue.destinationViewController;
     // Defining the FISHellaDetailViewController class object *detail (which I just created) to equal to the segue going to the destinationViewController (which in this case is FISHellaDetailViewController)
     
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
